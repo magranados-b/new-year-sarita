@@ -1,6 +1,16 @@
 <!doctype html>
 <html lang="en" data-beasties-container>
+
 <head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+    (function () {
+      const redirect = sessionStorage.getItem('spa_redirect');
+      if (redirect) {
+        sessionStorage.removeItem('spa_redirect');
+        history.replaceState(null, '', redirect);
+      }
+    })();
+  </script>
   <meta charset="utf-8">
   <title>Mensajito</title>
   <base href="/new-year-sarita/">
@@ -12,8 +22,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <style>body,html{height:100%;width:100%}body{font-family:Muli,Helvetica,Arial,sans-serif;webkit-tap-highlight-color:#222;color:#999}body{animation:snow 20s linear infinite}</style><link rel="stylesheet" href="styles.b3597a9490a1a1fa.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.b3597a9490a1a1fa.css"></noscript></head>
+
 <body id="page-top">
   <app-root></app-root>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="runtime.348780134b8a3632.js" type="module"></script><script src="scripts.2291a1765a55b890.js" defer></script><script src="main.9455c2912f7a6c28.js" type="module"></script></body>
+<script src="runtime.348780134b8a3632.js" type="module"></script><script src="scripts.2291a1765a55b890.js" defer></script><script src="main.1cec3a6888ad86d1.js" type="module"></script></body>
+
 </html>
