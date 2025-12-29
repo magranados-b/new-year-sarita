@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/cloudflare",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [],
@@ -24,8 +24,7 @@
                 "input": "public"
               },
               "src/favicon.ico",
-              "src/assets",
-              "src/404.html"
+              "src/assets"
             ],
             "styles": [
               "src/styles.css",
