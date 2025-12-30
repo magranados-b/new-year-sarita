@@ -57,12 +57,17 @@ export default class HomeComponent {
 
   }
 
-  private format(t: string): string {
-    return (t ?? '')
-      .toLowerCase()
-      .trim()
-      .replace(/\r\n/g, '\n')
-      .replace(/\s+/g, ' ');
-  }
+private format(t: string | null | undefined): string {
+  const s = (t ?? '');
+  const n = (typeof (s as any).normalize === 'function') ? s.normalize('NFKC') : s;
+
+  return n
+    .replace(/\r\n?|\n/g, '\n')
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')
+    .replace(/[\s\u00A0]+/g, ' ')
+    .trim()
+    .toLocaleLowerCase('es-MX');
+}
+
 
 }
