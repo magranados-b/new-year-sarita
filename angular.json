@@ -28,7 +28,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/css/theme.css"
+              "src/css/theme.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss"
             ],
             "scripts": [
               "src/js/jquery.min.js",
