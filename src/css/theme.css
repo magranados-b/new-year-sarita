@@ -31,7 +31,7 @@ body {
 	font-weight:200;
 	letter-spacing:1px;
   color:#111;
-  text-align: justify;
+  /* text-align: justify; */
 }
 a {
 	-webkit-transition:all .35s;
@@ -256,6 +256,14 @@ header .header-content .header-content-inner .list-badges {
 header .header-content .header-content-inner .list-badges img {
 	height:50px;
 	margin-bottom:25px
+}
+
+header .header-content .header-content-inner-form {
+  margin-top: 25px;
+}
+
+header .header-content .header-content-inner-form-button {
+  text-align: center;
 }
 
 header .device-container .screen img {
