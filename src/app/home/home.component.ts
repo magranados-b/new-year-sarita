@@ -17,7 +17,7 @@ export default class HomeComponent {
   public async showModal() {
 
     const { value: text } = await Swal.fire({
-      title: "¡Buena suerte!",
+      title: "¡Buena suerte Sarita!",
       input: "textarea",
       width: 600,
       padding: "2em",
